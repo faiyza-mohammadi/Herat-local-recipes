@@ -2,152 +2,39 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>غذاهای محلی و سنتی هرات</title>
-    <style>
-        body {
-            font-family: Tahoma, sans-serif;
-            direction: rtl;
-            background-color: #fff8f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            background-color: #b1452f;
-            padding: 1em;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        section {
-            display: none;
-            padding: 2em;
-        }
-
-        section.active {
-            display: block;
-        }
-
-        .gallery img {
-            width: 200px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-
-        form input, form textarea, form button {
-            display: block;
-            width: 100%;
-            margin: 10px 0;
-            padding: 0.5em;
-            font-size: 1em;
-        }
-
-        form {
-            background-color: #fbe6d4;
-            padding: 1em;
-            border-radius: 10px;
-        }
-
-        h1, h2 {
-            color: #b1452f;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سینمای هیجان‌انگیز من</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: wheat;">
 
-    <!-- عنوانی -->
-    <nav>
-<img src="PIXQ1923.PNG"  alt="faiyza logo  " style="width: 60px; vertical-align: middle; margin-left: 10px;">
+    <header>
+        <h1>🍿 سینمای هیجان‌انگیز من 🎬</h1>
+        <p>به دنیای فیلم‌ها خوش آمدید!</p>
+        <marquee>فلم ویژه امشب: این اولین پروژه من از 🤩سی اس اس 🤩است</marquee>
+    </header>
 
-        <a onclick="showSection('home')">خانه🏡</a>
-        <a onclick="showSection('add')">افزودن دستور👩‍🏫</a>
-        <a onclick="showSection('list')">فهرست دستورعمل پخت و پز 🍽️</a>
-        <a onclick="showSection('gallery')">گالری🖼️</a>
-        <a onclick="showSection('about')">درباره ما👩‍🏫</a>
-    </nav>
-
-    <!-- صفحه خانه -->
-    <section id="home" class="active">
-        <h1>به دفترچه غذاهای محلی و سنتی هرات خوش آمدید</h1>
-        <h2><b> طعم و فرهنگ در هر لقمه</b></h2>
-        <p>در اینجا مجموعه‌ای از غذاهای خوشمزه و اصیل هرات را خواهید یافت.</p>
-        <hr style="border: none;height: 2px;background-color: #ffd700;margin: 20px;">
-        <h2>دستور روز: قابلی پلو</h2>
-        <p>برنج معطر همراه با گوشت گوسفند، زرشک، کشمش و زردک — غذایی مجلسی و پرطرفدار.</p>
-        <img src="IMG_1972.JPG" alt="قابلی پلو" width="300">
+    <section class="video-section">
+        <video width="640" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+        </video>
     </section>
 
-    <!-- افزودن دستور -->
-    <section id="add">
-        <h2>افزودن یک دستور جدید👩‍🏫</h2>
-        <form>
-            <label>نام غذا:</label>
-            <input type="text" placeholder="🍛مثلاً آشچه">
-
-            <label>مواد لازم:</label>
-            <textarea rows="4" placeholder="لیست مواد لازم را وارد کنید..."></textarea>
-
-            <label>طرز تهیه:</label>
-            <textarea rows="4" placeholder="نحوه پخت را وارد کنید..."></textarea>
-
-            <button type="submit">ثبت دستور</button>
-        </form>
+    <section class="buttons">
+        <button onclick="document.querySelector('video').currentTime = 0; document.querySelector('video').play();">Play Again</button>
+        <button onclick="alert('😍تشکر از امتیاز شما!')">Rate Movie</button>
     </section>
 
-    <!-- فهرست دستورها -->
-    <section id="list">
-        <h2>فهرست غذاها🍔</h2>
-        <ul>
-            <li>کیچیری</li>
-            <li>کیچیری قروت</li>
-            <li>قابلی پلو</li>
-            <li>آش رشته</li>
-            <li>شوربای </li>
-            <li>گوشت لند</li>
-            <li>غلورتروش</li>
-            <li>غلور</li>
-            <li>غلور شیر</li>
-            <!-- نام‌های غذا را می‌تونی اضافه یا عوض کنی -->
-        </ul>
-    </section>
-
-    <!-- گالری -->
-    <section id="gallery">
-        <h2>گالری غذاها🖼️</h2>
-    <!-- خط افقی -->
-     <hr style="border: none;height: 2px;background-color: #ffd700;margin: 20px;">
-        <div class="gallery">
-            <img src="IMG_1972.JPG" alt="منتو">
-            <img src="IMG_1975.JPG" alt="آش">
-            <img src="IMG_1976.JPG" alt="شوربا">
-            <img src="IMG_1977.JPG" alt="">
-            <img src="IMG_1978.JPG" alt="">
-            <img src="IMG_1979.JPG" alt="">
-            <img src="IMG_1980.JPG" alt="">
-        </div>
-    </section>
-
-    <!-- درباره ما -->
-    <section id="about">
-        <h2>درباره ما👩‍🏫</h2>
-        <H3>سلام و درود</H3>
-        <p>من یک علاقه‌مند به آشپزی سنتی هراتی هستم و این اولین وب‌سایتم ازپروژه💫 اچ تی ام ال 💫 را برای اشتراک‌گذاری دستورهای محلی راه‌اندازی کرده‌ام.</p>
-    </section>
-
-    <script>
-        function showSection(id) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(sec => sec.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-        }
-    </script>
-
+    <footer>
+        <p class=" made_by { 
+            text_align: center;
+        font_size: 18px;
+    font_weight: bold;
+    }
+        
+        ">ساخته شده توسط فائیزه محمدی</p>
+    </footer>
 </body>
 </html>
